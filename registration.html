@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Documents | UTA Manpower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+  <div class="registration-page">
+    <div class="registration-header">
+      <h1><i class="fas fa-registered"></i> Registration Documents</h1>
+      <p>Ensure all documents are accurate and up to date</p>
+    </div>
+
+    <div class="registration-grid" id="registrationGrid">
+      <div class="registration-card" data-doc-title="Association of Licensed" data-doc-file="registration/registration1.png">
+        <div class="registration-card-preview">
+          <img src="registration/registration1.png" alt="Licence" class="card-img">
+          <span class="registration-badge">01</span>
+        </div>
+        <div class="registration-card-info">
+          <h3>Trade Licence</h3>
+          <div class="client"></div>
+        </div>
+      </div>
+
+      <div class="registration-card" data-doc-title="Association of Licensed" data-doc-file="registration/registration2.png">
+        <div class="registration-card-preview">
+          <img src="registration/registration2.png" alt="Licence" class="card-img">
+          <span class="registration-badge">02</span>
+        </div>
+        <div class="registration-card-info">
+          <h3>Kalmunai Municipal Council</h3>
+          <div class="client"></div>
+        </div>
+      </div>
+
+      <div class="registration-card" data-doc-title="Association of Licensed" data-doc-file="registration/registration3.png">
+        <div class="registration-card-preview">
+          <img src="registration/registration3.png" alt="Licence" class="card-img">
+          <span class="registration-badge">03</span>
+        </div>
+        <div class="registration-card-info">
+          <h3>Certificate of Assessment, Solid Waste Disposal Management and Advertisment Taxes For Trade/Business</h3>
+          <div class="client"></div>
+        </div>
+      </div>
+      
+      <div class="registration-card" data-doc-title="Association of Licensed" data-doc-file="registration/registration4.png">
+        <div class="registration-card-preview">
+          <img src="registration/registration4.png" alt="Licence" class="card-img">
+          <span class="registration-badge">04</span>
+        </div>
+        <div class="registration-card-info">
+          <h3>Taxpayer Identification Certificate</h3>
+          <div class="client"></div>
+        </div>
+      </div> 
+      
+      <div class="registration-card" data-doc-title="Association of Licensed" data-doc-file="registration/registration5.png">
+        <div class="registration-card-preview">
+          <img src="registration/registration5.png" alt="Licence" class="card-img">
+          <span class="registration-badge">05</span>
+        </div>
+        <div class="registration-card-info">
+          <h3>Certificate of Registration of an Individual Business</h3>
+          <div class="client"></div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="back-button-bottom">
+      <button class="back-btn-bottom" id="backToHomeBtn" ><i class="fas fa-arrow-left"></i> Back to Home</button>
+    </div>
+  </div>
+
+  <div class="modal" id="docModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModalBtn">&times;</span>
+      <i class="fas fa-image" style="font-size: 3rem; color: #b91c1c;"></i>
+      <h3 id="modalTitle">Document Title</h3>
+      <p id="modalClient"></p>
+      <p id="modalDate"></p>
+      <button class="view-doc-btn" id="viewDocBtn">View Document <i class="fas fa-external-link-alt"></i></button>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-image" id="lightboxImage" alt="Document Image">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="js/registration.js"></script>
+</body>
+</html>

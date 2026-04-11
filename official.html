@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Documents | UTA Manpower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/official.css">
+</head>
+<body>
+  <div class="official-page">
+    <div class="official-header">
+      <h1><i class="fas fa-file-contract"></i> Official Documents</h1>
+      <p>Verified records</p>
+    </div>
+
+    <div class="official-grid" id="officialGrid">
+      <div class="official-card" data-doc-title="Association of Licensed" data-doc-file="official/official1.png">
+        <div class="official-card-preview">
+          <img src="official/official1.png" alt="Licence" class="card-img">
+          <span class="official-badge">01</span>
+        </div>
+        <div class="official-card-info">
+          <h3>Licence to Carry on the business of a foreign Employment Agency</h3>
+          <div class="client"></div>
+        </div>
+      </div>
+
+      <div class="official-card" data-doc-title="Association of Licensed" data-doc-file="official/official2.png">
+        <div class="official-card-preview">
+          <img src="official/official2.png" alt="Licence" class="card-img">
+          <span class="official-badge">02</span>
+        </div>
+        <div class="official-card-info">
+          <h3>Building Professional Capacity of Licensed Foreign Employment Agents in Sri Lanka</h3>
+          <div class="client"></div>
+        </div>
+      </div>
+
+      <div class="official-card" data-doc-title="Association of Licensed" data-doc-file="official/official3.png">
+        <div class="official-card-preview">
+          <img src="official/official3.png" alt="Licence" class="card-img">
+          <span class="official-badge">03</span>
+        </div>
+        <div class="official-card-info">
+          <h3>Association of Licenced Foriegn Emplotment Agencies</h3>
+          <div class="client"></div>
+        </div>
+      </div>
+
+      <div class="official-card" data-doc-title="Association of Licensed" data-doc-file="official/official4.png">
+        <div class="official-card-preview">
+          <img src="official/official4.png" alt="Licence" class="card-img">
+          <span class="official-badge">04</span>
+        </div>
+        <div class="official-card-info">
+          <h3>Taxpayer Identification Certificate</h3>
+          <div class="client"></div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="back-button-bottom">
+      <button class="back-btn-bottom" id="backToHomeBtn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+    </div>
+  </div>
+
+  <div class="modal" id="docModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModalBtn">&times;</span>
+      <i class="fas fa-image" style="font-size: 3rem; color: #b91c1c;"></i>
+      <h3 id="modalTitle">Document Title</h3>
+      <p id="modalClient"></p>
+      <p id="modalDate"></p>
+      <button class="view-doc-btn" id="viewDocBtn">View Document <i class="fas fa-external-link-alt"></i></button>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-image" id="lightboxImage" alt="Document Image">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="js/official.js"></script>
+</body>
+</html>
