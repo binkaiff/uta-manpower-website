@@ -61,31 +61,9 @@ A modern web experience that:
 
 ---
 
-## 📸 Screenshots
-
-### 🏠 Homepage
-![Homepage](images/home.png)
-
----
-
-### 🖼️ Gallery Section
-![Gallery](images/gallery.png)
-
----
-
-### 📩 Contact Page
-![Contact](images/contact.png)
-
----
-
-### 🔒 Protected Page
-![Protected](images/protected.png)
-
----
-
 ## 🌍 Live Demo
 
-👉 https://your-vercel-link.vercel.app  
+👉 http://utamanpower.com/
 
 ---
 
