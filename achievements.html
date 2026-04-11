@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievement and Success | UTA Manpower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/achievements.css">
+</head>
+<body>
+  <div class="achievements-page">
+    <div class="achievements-header">
+      <h1><i class="fa-solid fa-award"></i> Achievement and Success</h1>
+      <p>Built on hard work, driven by results</p>
+    </div>
+
+    <div class="achievements-grid" id="achievementsGrid">
+      <div class="achievement-card" data-doc-title="Association of Licensed" data-doc-client="" data-doc-date="June 30, 2018" data-doc-file="achievements/achievement1.png">
+        <div class="achievement-card-preview">
+          <img src="achievements/achievement1.png" alt="Association of licensed certificate" class="card-img">
+          <span class="achievement-badge">01</span>
+        </div>
+        <div class="achievement-card-info">
+          <h3>The Association of Licensed </h3>
+          <div class="client"></div>
+          <div class="date"><i class="far fa-calendar-alt"></i> June 30, 2018</div>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-doc-title="Association of Licensed" data-doc-client="" data-doc-date="June 30, 2016" data-doc-file="achievements/achievement2.png">
+        <div class="achievement-card-preview">
+          <img src="achievements/achievement2.png" alt="Association of licensed certificate" class="card-img">
+          <span class="achievement-badge">02</span>
+        </div>
+        <div class="achievement-card-info">
+          <h3>Association of Licensed Foreign Employment Agencies</h3>
+          <div class="client"></div>
+          <div class="date"><i class="far fa-calendar-alt"></i> June 30, 2016</div>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-doc-title="Association of Licensed" data-doc-client="" data-doc-date="August 10, 2006" data-doc-file="achievements/achievement3.png">
+        <div class="achievement-card-preview">
+          <img src="achievements/achievement3.png" alt="Association of licensed certificate" class="card-img">
+          <span class="achievement-badge">03</span>
+        </div>
+        <div class="achievement-card-info">
+          <h3>Association of Licensed</h3>
+          <div class="client"></div>
+          <div class="date"><i class="far fa-calendar-alt"></i> August 10, 2006</div>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-doc-title="Association of Licensed" data-doc-client="" data-doc-date="June 13, 2014" data-doc-file="achievements/achievement4.png">
+        <div class="achievement-card-preview">
+          <img src="achievements/achievement4.png" alt="Association of licensed certificate" class="card-img">
+          <span class="achievement-badge">04</span>
+        </div>
+        <div class="achievement-card-info">
+          <h3>Excellence Awards 2014</h3>
+          <div class="client"></div>
+          <div class="date"><i class="far fa-calendar-alt"></i> June 13, 2014</div>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-doc-title="Association of Licensed" data-doc-client="" data-doc-date="September 08, 2016" data-doc-file="achievements/achievement5.png">
+        <div class="achievement-card-preview">
+          <img src="achievements/achievement5.png" alt="Association of licensed certificate" class="card-img">
+          <span class="achievement-badge">05</span>
+        </div>
+        <div class="achievement-card-info">
+          <h3>Licence to carry on the business of foreign Employment</h3>
+          <div class="client"></div>
+          <div class="date"><i class="far fa-calendar-alt"></i> September 08, 2016</div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="back-button-bottom">
+      <button class="back-btn-bottom" id="backToHomeBtn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+    </div>
+  </div>
+
+  <div class="modal" id="docModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModalBtn">&times;</span>
+      <i class="fas fa-image" style="font-size: 3rem; color: #b91c1c;"></i>
+      <h3 id="modalTitle">Document Title</h3>
+      <p id="modalClient"></p>
+      <p id="modalDate"></p>
+      <button class="view-doc-btn" id="viewDocBtn">View Document <i class="fas fa-external-link-alt"></i></button>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-image" id="lightboxImage" alt="Document Image">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="js/achievements.js"></script>
+</body>
+</html>
+

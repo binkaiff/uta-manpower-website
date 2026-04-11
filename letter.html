@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client's Demand Letters | UTA Manpower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/letter.css">
+</head>
+<body>
+
+<!-- Password Protection Modal -->
+<div class="password-overlay" id="passwordOverlay">
+  <div class="password-modal">
+    <div class="password-icon">
+      <i class="fas fa-lock"></i>
+    </div>
+    <h2>Protected Page</h2>
+    <p>This page contains confidential client demand letters.<br>Please enter the password to continue.</p>
+    <div class="password-input-wrapper">
+      <i class="fas fa-key"></i>
+      <input type="password" id="passwordInput" placeholder="Enter password" autofocus>
+    </div>
+    <button class="password-btn" id="submitPasswordBtn">
+      <i class="fas fa-unlock-alt"></i> Unlock Page
+    </button>
+    <button class="password-btn-back" id="backToHomeFromPasswordBtn">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </button>
+    <div class="error-message" id="errorMessage">
+      <i class="fas fa-exclamation-circle"></i> Incorrect password. Please try again.
+    </div>
+  </div>
+</div>
+
+<!-- Main Content (Hidden until password is entered) -->
+<div class="letter-page" id="letterPage" style="display: none;">
+  <div class="letter-header">
+    <h1><i class="fas fa-envelope"></i> Client's Demand Letters</h1>
+    <p>Official demand letters from international clients</p>
+  </div>
+
+  <div class="letter-grid" id="letterGrid">
+    <div class="letter-card" data-doc-title="Al Fanar Recruitment" data-doc-date="July 01, 2024" data-doc-file="leters/letter1.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter1.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">01</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Al Fanar Recruitment</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> July 01, 2024</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Red Rose Cleaning Services" data-doc-date="December 22, 2025" data-doc-file="leters/letter2.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter2.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">02</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Red Rose Cleaning Services</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> December 22, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Red Rose Printing" data-doc-date="December 12, 2025" data-doc-file="leters/letter3.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter3.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">03</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Red Rose Printing</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> December 12, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Al Aura Trading" data-doc-date="September 25, 2025" data-doc-file="leters/letter4.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter4.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">04</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Al Aura Trading</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> September 25, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="LMN Trading and Contracting" data-doc-date="December 23, 2025" data-doc-file="leters/letter5.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter5.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">05</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>LMN Trading and Contracting</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> December 23, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Tatwir Al Seelan Cleaning and Hospitality" data-doc-date="September 23, 2025" data-doc-file="leters/letter6.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter6.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">06</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Tatwir Al Seelan Cleaning and Hospitality</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> September 23, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Usool Althahani Trading" data-doc-date="November 11, 2025" data-doc-file="leters/letter7.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter7.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">07</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Usool Althahani Trading</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> November 11, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="New Moon Line Cleaning and Hospitality" data-doc-date="December 15, 2025" data-doc-file="leters/letter8.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter8.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">08</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>New Moon Line Cleaning and Hospitality</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> December 15, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Reeha For Transaction Clearance Services" data-doc-date="December 29, 2025" data-doc-file="leters/letter9.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter9.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">09</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Reeha For Transaction Clearance Services</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> December 29, 2025</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Emaco Services Co." data-doc-date="September 29, 2011" data-doc-file="leters/letter10.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter10.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">10</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Emaco Services Co.</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> September 29, 2011</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Al-Bida Services Manpower Supply Agency" data-doc-date="November 07, 2010" data-doc-file="leters/letter11.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter11.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">11</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Al-Bida Services Manpower Supply Agency</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> November 07, 2010</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Al Noof Recruitment Services" data-doc-date="March 31, 2008" data-doc-file="leters/letter12.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter12.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">12</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Al Noof Recruitment Services</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> March 31, 2008</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Suhad Mawazi Mizban Office" data-doc-date="January 28, 2007" data-doc-file="leters/letter13.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter13.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">13</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Suhad Mawazi Mizban Office</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> January 28, 2007</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Abdul Aziz Buhamad Recruitment Agency" data-doc-date="April 10, 2007" data-doc-file="leters/letter14.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter14.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">14</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Abdul Aziz Buhamad Recruitment Agency</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> April 10, 2007</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Easy Contracting WLL" data-doc-date="September 19, 2017" data-doc-file="leters/letter15.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter15.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">15</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Easy Contracting WLL</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> September 19, 2017</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Al-Fardani" data-doc-date="May 23, 2010" data-doc-file="leters/letter16.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter16.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">16</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Al-Fardani</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> May 23, 2010</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Emaco Services Co." data-doc-date="November 26, 2008" data-doc-file="leters/letter17.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter17.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">17</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Emaco Services Co.</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> November 26, 2008</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Helethan Manpower" data-doc-date="June 08, 2011" data-doc-file="leters/letter18.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter18.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">18</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Helethan Manpower</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> June 08, 2011</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Emaco Services Co." data-doc-date="February 11, 2007" data-doc-file="leters/letter19.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter19.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">19</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Emaco Services Co.</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> February 11, 2007</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Insign Contracting Co. WLL" data-doc-date="September 19, 2017" data-doc-file="leters/letter20.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter20.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">20</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Insign Contracting Co. WLL</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> September 19, 2017</div>
+      </div>
+    </div>
+
+    <div class="letter-card" data-doc-title="Al Dahan Manpower" data-doc-date="February 16, 2012" data-doc-file="leters/letter21.png">
+      <div class="letter-card-preview">
+        <img src="leters/letter21.png" alt="Demand Letter" class="card-img">
+        <span class="letter-badge">21</span>
+      </div>
+      <div class="letter-card-info">
+        <h3>Al Dahan Manpower</h3>
+        <div class="date"><i class="far fa-calendar-alt"></i> February 16, 2012</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-button-bottom">
+    <button class="back-btn-bottom" id="backToHomeBtn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+  </div>
+</div>
+
+<!-- Modal for Document Info -->
+<div class="modal" id="docModal">
+  <div class="modal-content">
+    <span class="close-modal" id="closeModalBtn">&times;</span>
+    <i class="fas fa-file-alt" style="font-size: 3rem; color: #b91c1c;"></i>
+    <h3 id="modalTitle">Document Title</h3>
+    <p id="modalDate"></p>
+    <button class="view-doc-btn" id="viewDocBtn">View Document <i class="fas fa-external-link-alt"></i></button>
+  </div>
+</div>
+
+<!-- Lightbox for Image Viewing -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img class="lightbox-image" id="lightboxImage" alt="Document Image">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script src="js/letter.js"></script>
+</body>
+</html>
